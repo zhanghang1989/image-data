@@ -1,0 +1,705 @@
+PSP(
+  (pretrained): ResNet(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (layer2): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (3): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (layer3): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (3): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (4): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (5): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (layer4): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (avgpool): AvgPool2d(kernel_size=7, stride=7, padding=0)
+    (fc): Linear(in_features=2048, out_features=1000, bias=True)
+  )
+  (head): PSPHead(
+    (conv5): Sequential(
+      (0): PyramidPooling(
+        (pool1): AdaptiveAvgPool2d(output_size=1)
+        (pool2): AdaptiveAvgPool2d(output_size=2)
+        (pool3): AdaptiveAvgPool2d(output_size=3)
+        (pool4): AdaptiveAvgPool2d(output_size=6)
+        (conv1): Sequential(
+          (0): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace)
+        )
+        (conv2): Sequential(
+          (0): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace)
+        )
+        (conv3): Sequential(
+          (0): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace)
+        )
+        (conv4): Sequential(
+          (0): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace)
+        )
+      )
+      (1): Conv2d(4096, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace)
+      (4): Dropout2d(p=0.1)
+      (5): Conv2d(512, 150, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (auxlayer): FCNHead(
+    (conv5): Sequential(
+      (0): Conv2d(1024, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Dropout2d(p=0.1)
+      (4): Conv2d(256, 150, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  0%|          | 0/1263 [00:00<?, ?it/s]
+Using poly LR Scheduler!
+Starting Epoch: 0
+Total Epoches: 120
+Train loss: 2.287: 100%|██████████| 1263/1263 [16:56<00:00,  1.24it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 0, learning rate = 0.0100,                 previous best = 0.0000
+pixAcc: 0.653, mIoU: 0.149: 100%|██████████| 125/125 [01:20<00:00,  1.55it/s]
+Train loss: 1.880: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 1, learning rate = 0.0099,                 previous best = 0.4011
+pixAcc: 0.677, mIoU: 0.200: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 1.746: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 2, learning rate = 0.0098,                 previous best = 0.4384
+pixAcc: 0.694, mIoU: 0.226: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 1.663: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 3, learning rate = 0.0098,                 previous best = 0.4598
+pixAcc: 0.702, mIoU: 0.248: 100%|██████████| 125/125 [01:17<00:00,  1.62it/s]
+Train loss: 1.602: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 4, learning rate = 0.0097,                 previous best = 0.4751
+pixAcc: 0.690, mIoU: 0.230: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 1.568: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 5, learning rate = 0.0096,                 previous best = 0.4751
+pixAcc: 0.711, mIoU: 0.261: 100%|██████████| 125/125 [01:13<00:00,  1.70it/s]
+Train loss: 1.520: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 6, learning rate = 0.0095,                 previous best = 0.4860
+pixAcc: 0.688, mIoU: 0.256: 100%|██████████| 125/125 [01:12<00:00,  1.72it/s]
+Train loss: 1.497: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 7, learning rate = 0.0095,                 previous best = 0.4860
+pixAcc: 0.705, mIoU: 0.261: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 1.460: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 8, learning rate = 0.0094,                 previous best = 0.4860
+pixAcc: 0.718, mIoU: 0.264: 100%|██████████| 125/125 [01:14<00:00,  1.67it/s]
+Train loss: 1.450: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 9, learning rate = 0.0093,                 previous best = 0.4912
+pixAcc: 0.717, mIoU: 0.279: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 1.417: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 10, learning rate = 0.0092,                 previous best = 0.4976
+pixAcc: 0.721, mIoU: 0.291: 100%|██████████| 125/125 [01:14<00:00,  1.67it/s]
+Train loss: 1.412: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 11, learning rate = 0.0092,                 previous best = 0.5056
+pixAcc: 0.716, mIoU: 0.286: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 1.376: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 12, learning rate = 0.0091,                 previous best = 0.5056
+pixAcc: 0.716, mIoU: 0.283: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 1.379: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 13, learning rate = 0.0090,                 previous best = 0.5056
+pixAcc: 0.728, mIoU: 0.299: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 1.346: 100%|██████████| 1263/1263 [16:39<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 14, learning rate = 0.0089,                 previous best = 0.5139
+pixAcc: 0.722, mIoU: 0.295: 100%|██████████| 125/125 [01:12<00:00,  1.71it/s]
+Train loss: 1.332: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 15, learning rate = 0.0089,                 previous best = 0.5139
+pixAcc: 0.713, mIoU: 0.296: 100%|██████████| 125/125 [01:11<00:00,  1.74it/s]
+Train loss: 1.332: 100%|██████████| 1263/1263 [16:38<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 16, learning rate = 0.0088,                 previous best = 0.5139
+pixAcc: 0.729, mIoU: 0.289: 100%|██████████| 125/125 [01:12<00:00,  1.74it/s]
+Train loss: 1.303: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 17, learning rate = 0.0087,                 previous best = 0.5139
+pixAcc: 0.734, mIoU: 0.308: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 1.298: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 18, learning rate = 0.0086,                 previous best = 0.5211
+pixAcc: 0.720, mIoU: 0.300: 100%|██████████| 125/125 [01:17<00:00,  1.62it/s]
+Train loss: 1.288: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 19, learning rate = 0.0086,                 previous best = 0.5211
+pixAcc: 0.730, mIoU: 0.311: 100%|██████████| 125/125 [01:14<00:00,  1.67it/s]
+Train loss: 1.282: 100%|██████████| 1263/1263 [16:36<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 20, learning rate = 0.0085,                 previous best = 0.5211
+pixAcc: 0.732, mIoU: 0.316: 100%|██████████| 125/125 [01:11<00:00,  1.74it/s]
+Train loss: 1.253: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 21, learning rate = 0.0084,                 previous best = 0.5242
+pixAcc: 0.741, mIoU: 0.314: 100%|██████████| 125/125 [01:13<00:00,  1.69it/s]
+Train loss: 1.254: 100%|██████████| 1263/1263 [16:52<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 22, learning rate = 0.0083,                 previous best = 0.5275
+pixAcc: 0.730, mIoU: 0.314: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 1.227: 100%|██████████| 1263/1263 [16:49<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 23, learning rate = 0.0083,                 previous best = 0.5275
+pixAcc: 0.731, mIoU: 0.323: 100%|██████████| 125/125 [01:12<00:00,  1.72it/s]
+Train loss: 1.226: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 24, learning rate = 0.0082,                 previous best = 0.5275
+pixAcc: 0.734, mIoU: 0.318: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 1.210: 100%|██████████| 1263/1263 [16:51<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 25, learning rate = 0.0081,                 previous best = 0.5275
+pixAcc: 0.732, mIoU: 0.324: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 1.209: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 26, learning rate = 0.0080,                 previous best = 0.5277
+pixAcc: 0.730, mIoU: 0.314: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 1.194: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 27, learning rate = 0.0080,                 previous best = 0.5277
+pixAcc: 0.730, mIoU: 0.318: 100%|██████████| 125/125 [01:13<00:00,  1.70it/s]
+Train loss: 1.189: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 28, learning rate = 0.0079,                 previous best = 0.5277
+pixAcc: 0.725, mIoU: 0.319: 100%|██████████| 125/125 [01:12<00:00,  1.72it/s]
+Train loss: 1.183: 100%|██████████| 1263/1263 [16:37<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 29, learning rate = 0.0078,                 previous best = 0.5277
+pixAcc: 0.741, mIoU: 0.327: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 1.175: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 30, learning rate = 0.0077,                 previous best = 0.5340
+pixAcc: 0.742, mIoU: 0.318: 100%|██████████| 125/125 [01:16<00:00,  1.62it/s]
+Train loss: 1.152: 100%|██████████| 1263/1263 [16:49<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 31, learning rate = 0.0076,                 previous best = 0.5340
+pixAcc: 0.740, mIoU: 0.318: 100%|██████████| 125/125 [01:12<00:00,  1.71it/s]
+Train loss: 1.147: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 32, learning rate = 0.0076,                 previous best = 0.5340
+pixAcc: 0.739, mIoU: 0.326: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 1.145: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 33, learning rate = 0.0075,                 previous best = 0.5340
+pixAcc: 0.747, mIoU: 0.344: 100%|██████████| 125/125 [01:12<00:00,  1.72it/s]
+Train loss: 1.145: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 34, learning rate = 0.0074,                 previous best = 0.5451
+pixAcc: 0.745, mIoU: 0.347: 100%|██████████| 125/125 [01:13<00:00,  1.69it/s]
+Train loss: 1.120: 100%|██████████| 1263/1263 [16:37<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 35, learning rate = 0.0073,                 previous best = 0.5461
+pixAcc: 0.743, mIoU: 0.330: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 1.111: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 36, learning rate = 0.0073,                 previous best = 0.5461
+pixAcc: 0.743, mIoU: 0.332: 100%|██████████| 125/125 [01:17<00:00,  1.62it/s]
+Train loss: 1.110: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 37, learning rate = 0.0072,                 previous best = 0.5461
+pixAcc: 0.735, mIoU: 0.330: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 1.105: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 38, learning rate = 0.0071,                 previous best = 0.5461
+pixAcc: 0.726, mIoU: 0.318: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 1.090: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 39, learning rate = 0.0070,                 previous best = 0.5461
+pixAcc: 0.747, mIoU: 0.329: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 1.091: 100%|██████████| 1263/1263 [16:38<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 40, learning rate = 0.0069,                 previous best = 0.5461
+pixAcc: 0.745, mIoU: 0.340: 100%|██████████| 125/125 [01:12<00:00,  1.72it/s]
+Train loss: 1.089: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 41, learning rate = 0.0069,                 previous best = 0.5461
+pixAcc: 0.741, mIoU: 0.341: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 1.070: 100%|██████████| 1263/1263 [16:46<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 42, learning rate = 0.0068,                 previous best = 0.5461
+pixAcc: 0.746, mIoU: 0.337: 100%|██████████| 125/125 [01:17<00:00,  1.62it/s]
+Train loss: 1.069: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 43, learning rate = 0.0067,                 previous best = 0.5461
+pixAcc: 0.752, mIoU: 0.347: 100%|██████████| 125/125 [01:14<00:00,  1.69it/s]
+Train loss: 1.042: 100%|██████████| 1263/1263 [16:39<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 44, learning rate = 0.0066,                 previous best = 0.5492
+pixAcc: 0.755, mIoU: 0.346: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 1.045: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 45, learning rate = 0.0066,                 previous best = 0.5503
+pixAcc: 0.747, mIoU: 0.336: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 1.036: 100%|██████████| 1263/1263 [16:39<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 46, learning rate = 0.0065,                 previous best = 0.5503
+pixAcc: 0.748, mIoU: 0.349: 100%|██████████| 125/125 [01:14<00:00,  1.67it/s]
+Train loss: 1.026: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 47, learning rate = 0.0064,                 previous best = 0.5503
+pixAcc: 0.751, mIoU: 0.357: 100%|██████████| 125/125 [01:13<00:00,  1.71it/s]
+Train loss: 1.026: 100%|██████████| 1263/1263 [16:39<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 48, learning rate = 0.0063,                 previous best = 0.5537
+pixAcc: 0.747, mIoU: 0.341: 100%|██████████| 125/125 [01:13<00:00,  1.70it/s]
+Train loss: 1.021: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 49, learning rate = 0.0062,                 previous best = 0.5537
+pixAcc: 0.743, mIoU: 0.332: 100%|██████████| 125/125 [01:13<00:00,  1.71it/s]
+Train loss: 1.013: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 50, learning rate = 0.0062,                 previous best = 0.5537
+pixAcc: 0.747, mIoU: 0.333: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 1.013: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 51, learning rate = 0.0061,                 previous best = 0.5537
+pixAcc: 0.751, mIoU: 0.345: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 1.011: 100%|██████████| 1263/1263 [16:50<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 52, learning rate = 0.0060,                 previous best = 0.5537
+pixAcc: 0.754, mIoU: 0.354: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 0.993: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 53, learning rate = 0.0059,                 previous best = 0.5539
+pixAcc: 0.754, mIoU: 0.357: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 0.994: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 54, learning rate = 0.0058,                 previous best = 0.5552
+pixAcc: 0.756, mIoU: 0.351: 100%|██████████| 125/125 [01:13<00:00,  1.69it/s]
+Train loss: 0.965: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 55, learning rate = 0.0058,                 previous best = 0.5552
+pixAcc: 0.744, mIoU: 0.343: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 0.962: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 56, learning rate = 0.0057,                 previous best = 0.5552
+pixAcc: 0.758, mIoU: 0.354: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.951: 100%|██████████| 1263/1263 [16:46<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 57, learning rate = 0.0056,                 previous best = 0.5562
+pixAcc: 0.749, mIoU: 0.356: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 0.943: 100%|██████████| 1263/1263 [16:40<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 58, learning rate = 0.0055,                 previous best = 0.5562
+pixAcc: 0.751, mIoU: 0.353: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 0.958: 100%|██████████| 1263/1263 [16:37<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 59, learning rate = 0.0054,                 previous best = 0.5562
+pixAcc: 0.756, mIoU: 0.351: 100%|██████████| 125/125 [01:13<00:00,  1.70it/s]
+Train loss: 0.943: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 60, learning rate = 0.0054,                 previous best = 0.5562
+pixAcc: 0.751, mIoU: 0.358: 100%|██████████| 125/125 [01:15<00:00,  1.67it/s]
+Train loss: 0.915: 100%|██████████| 1263/1263 [16:49<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 61, learning rate = 0.0053,                 previous best = 0.5562
+pixAcc: 0.752, mIoU: 0.360: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 0.929: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 62, learning rate = 0.0052,                 previous best = 0.5562
+pixAcc: 0.753, mIoU: 0.357: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 0.917: 100%|██████████| 1263/1263 [16:46<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 63, learning rate = 0.0051,                 previous best = 0.5562
+pixAcc: 0.752, mIoU: 0.350: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 0.907: 100%|██████████| 1263/1263 [16:40<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 64, learning rate = 0.0050,                 previous best = 0.5562
+pixAcc: 0.757, mIoU: 0.361: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 0.901: 100%|██████████| 1263/1263 [16:36<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 65, learning rate = 0.0050,                 previous best = 0.5590
+pixAcc: 0.753, mIoU: 0.353: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 0.889: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 66, learning rate = 0.0049,                 previous best = 0.5590
+pixAcc: 0.754, mIoU: 0.356: 100%|██████████| 125/125 [01:13<00:00,  1.69it/s]
+Train loss: 0.882: 100%|██████████| 1263/1263 [16:37<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 67, learning rate = 0.0048,                 previous best = 0.5590
+pixAcc: 0.764, mIoU: 0.370: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 0.877: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 68, learning rate = 0.0047,                 previous best = 0.5670
+pixAcc: 0.755, mIoU: 0.357: 100%|██████████| 125/125 [01:17<00:00,  1.62it/s]
+Train loss: 0.882: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 69, learning rate = 0.0046,                 previous best = 0.5670
+pixAcc: 0.760, mIoU: 0.368: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 0.865: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 70, learning rate = 0.0045,                 previous best = 0.5670
+pixAcc: 0.753, mIoU: 0.362: 100%|██████████| 125/125 [01:19<00:00,  1.58it/s]
+Train loss: 0.863: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 71, learning rate = 0.0045,                 previous best = 0.5670
+pixAcc: 0.759, mIoU: 0.364: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.852: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 72, learning rate = 0.0044,                 previous best = 0.5670
+pixAcc: 0.754, mIoU: 0.359: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.842: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 73, learning rate = 0.0043,                 previous best = 0.5670
+pixAcc: 0.756, mIoU: 0.362: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 0.837: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 74, learning rate = 0.0042,                 previous best = 0.5670
+pixAcc: 0.753, mIoU: 0.355: 100%|██████████| 125/125 [01:13<00:00,  1.69it/s]
+Train loss: 0.819: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 75, learning rate = 0.0041,                 previous best = 0.5670
+pixAcc: 0.765, mIoU: 0.365: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 0.797: 100%|██████████| 1263/1263 [16:39<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 76, learning rate = 0.0041,                 previous best = 0.5670
+pixAcc: 0.763, mIoU: 0.367: 100%|██████████| 125/125 [01:13<00:00,  1.69it/s]
+Train loss: 0.799: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 77, learning rate = 0.0040,                 previous best = 0.5670
+pixAcc: 0.764, mIoU: 0.371: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 0.796: 100%|██████████| 1263/1263 [16:46<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 78, learning rate = 0.0039,                 previous best = 0.5674
+pixAcc: 0.763, mIoU: 0.371: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.792: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 79, learning rate = 0.0038,                 previous best = 0.5674
+pixAcc: 0.762, mIoU: 0.368: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 0.777: 100%|██████████| 1263/1263 [16:40<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 80, learning rate = 0.0037,                 previous best = 0.5674
+pixAcc: 0.758, mIoU: 0.364: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 0.780: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 81, learning rate = 0.0036,                 previous best = 0.5674
+pixAcc: 0.757, mIoU: 0.377: 100%|██████████| 125/125 [01:14<00:00,  1.67it/s]
+Train loss: 0.774: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 82, learning rate = 0.0036,                 previous best = 0.5674
+pixAcc: 0.762, mIoU: 0.374: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 0.760: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 83, learning rate = 0.0035,                 previous best = 0.5677
+pixAcc: 0.765, mIoU: 0.384: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 0.755: 100%|██████████| 1263/1263 [16:46<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 84, learning rate = 0.0034,                 previous best = 0.5747
+pixAcc: 0.765, mIoU: 0.376: 100%|██████████| 125/125 [01:19<00:00,  1.58it/s]
+Train loss: 0.742: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 85, learning rate = 0.0033,                 previous best = 0.5747
+pixAcc: 0.769, mIoU: 0.383: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 0.731: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 86, learning rate = 0.0032,                 previous best = 0.5757
+pixAcc: 0.767, mIoU: 0.376: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.733: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 87, learning rate = 0.0031,                 previous best = 0.5757
+pixAcc: 0.768, mIoU: 0.382: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 0.734: 100%|██████████| 1263/1263 [16:34<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 88, learning rate = 0.0030,                 previous best = 0.5757
+pixAcc: 0.767, mIoU: 0.383: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 0.714: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 89, learning rate = 0.0030,                 previous best = 0.5757
+pixAcc: 0.768, mIoU: 0.385: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 0.706: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 90, learning rate = 0.0029,                 previous best = 0.5761
+pixAcc: 0.772, mIoU: 0.386: 100%|██████████| 125/125 [01:19<00:00,  1.58it/s]
+Train loss: 0.701: 100%|██████████| 1263/1263 [16:46<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 91, learning rate = 0.0028,                 previous best = 0.5791
+pixAcc: 0.772, mIoU: 0.389: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.685: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 92, learning rate = 0.0027,                 previous best = 0.5803
+pixAcc: 0.771, mIoU: 0.385: 100%|██████████| 125/125 [01:19<00:00,  1.58it/s]
+Train loss: 0.676: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 93, learning rate = 0.0026,                 previous best = 0.5803
+pixAcc: 0.770, mIoU: 0.385: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 0.673: 100%|██████████| 1263/1263 [16:46<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 94, learning rate = 0.0025,                 previous best = 0.5803
+pixAcc: 0.771, mIoU: 0.377: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 0.673: 100%|██████████| 1263/1263 [16:40<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 95, learning rate = 0.0024,                 previous best = 0.5803
+pixAcc: 0.771, mIoU: 0.379: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 0.660: 100%|██████████| 1263/1263 [16:41<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 96, learning rate = 0.0023,                 previous best = 0.5803
+pixAcc: 0.776, mIoU: 0.401: 100%|██████████| 125/125 [01:18<00:00,  1.58it/s]
+Train loss: 0.661: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 97, learning rate = 0.0023,                 previous best = 0.5889
+pixAcc: 0.776, mIoU: 0.391: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.641: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 98, learning rate = 0.0022,                 previous best = 0.5889
+pixAcc: 0.772, mIoU: 0.387: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.647: 100%|██████████| 1263/1263 [16:46<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 99, learning rate = 0.0021,                 previous best = 0.5889
+pixAcc: 0.776, mIoU: 0.393: 100%|██████████| 125/125 [01:16<00:00,  1.64it/s]
+Train loss: 0.630: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 100, learning rate = 0.0020,                 previous best = 0.5889
+pixAcc: 0.774, mIoU: 0.395: 100%|██████████| 125/125 [01:16<00:00,  1.63it/s]
+Train loss: 0.617: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 101, learning rate = 0.0019,                 previous best = 0.5889
+pixAcc: 0.777, mIoU: 0.394: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 0.618: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 102, learning rate = 0.0018,                 previous best = 0.5889
+pixAcc: 0.772, mIoU: 0.392: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 0.607: 100%|██████████| 1263/1263 [16:43<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 103, learning rate = 0.0017,                 previous best = 0.5889
+pixAcc: 0.778, mIoU: 0.396: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.606: 100%|██████████| 1263/1263 [16:46<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 104, learning rate = 0.0016,                 previous best = 0.5889
+pixAcc: 0.778, mIoU: 0.398: 100%|██████████| 125/125 [01:20<00:00,  1.56it/s]
+Train loss: 0.598: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 105, learning rate = 0.0015,                 previous best = 0.5889
+pixAcc: 0.777, mIoU: 0.395: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 0.593: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 106, learning rate = 0.0014,                 previous best = 0.5889
+pixAcc: 0.776, mIoU: 0.403: 100%|██████████| 125/125 [01:17<00:00,  1.61it/s]
+Train loss: 0.586: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 107, learning rate = 0.0014,                 previous best = 0.5897
+pixAcc: 0.779, mIoU: 0.400: 100%|██████████| 125/125 [01:14<00:00,  1.68it/s]
+Train loss: 0.578: 100%|██████████| 1263/1263 [16:37<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 108, learning rate = 0.0013,                 previous best = 0.5897
+pixAcc: 0.777, mIoU: 0.402: 100%|██████████| 125/125 [01:14<00:00,  1.67it/s]
+Train loss: 0.571: 100%|██████████| 1263/1263 [16:36<00:00,  1.27it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 109, learning rate = 0.0012,                 previous best = 0.5897
+pixAcc: 0.780, mIoU: 0.406: 100%|██████████| 125/125 [01:19<00:00,  1.58it/s]
+Train loss: 0.565: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 110, learning rate = 0.0011,                 previous best = 0.5932
+pixAcc: 0.778, mIoU: 0.396: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 0.560: 100%|██████████| 1263/1263 [16:47<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 111, learning rate = 0.0010,                 previous best = 0.5932
+pixAcc: 0.779, mIoU: 0.397: 100%|██████████| 125/125 [01:18<00:00,  1.59it/s]
+Train loss: 0.551: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 112, learning rate = 0.0009,                 previous best = 0.5932
+pixAcc: 0.780, mIoU: 0.402: 100%|██████████| 125/125 [01:18<00:00,  1.58it/s]
+Train loss: 0.547: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 113, learning rate = 0.0008,                 previous best = 0.5932
+pixAcc: 0.781, mIoU: 0.403: 100%|██████████| 125/125 [01:19<00:00,  1.57it/s]
+Train loss: 0.543: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 114, learning rate = 0.0007,                 previous best = 0.5932
+pixAcc: 0.780, mIoU: 0.400: 100%|██████████| 125/125 [01:15<00:00,  1.67it/s]
+Train loss: 0.537: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 115, learning rate = 0.0006,                 previous best = 0.5932
+pixAcc: 0.780, mIoU: 0.405: 100%|██████████| 125/125 [01:15<00:00,  1.65it/s]
+Train loss: 0.534: 100%|██████████| 1263/1263 [16:44<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 116, learning rate = 0.0005,                 previous best = 0.5932
+pixAcc: 0.781, mIoU: 0.403: 100%|██████████| 125/125 [01:15<00:00,  1.66it/s]
+Train loss: 0.527: 100%|██████████| 1263/1263 [16:45<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 117, learning rate = 0.0004,                 previous best = 0.5932
+pixAcc: 0.781, mIoU: 0.404: 100%|██████████| 125/125 [01:18<00:00,  1.60it/s]
+Train loss: 0.525: 100%|██████████| 1263/1263 [16:48<00:00,  1.25it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 118, learning rate = 0.0003,                 previous best = 0.5932
+pixAcc: 0.782, mIoU: 0.405: 100%|██████████| 125/125 [01:19<00:00,  1.58it/s]
+Train loss: 0.523: 100%|██████████| 1263/1263 [16:42<00:00,  1.26it/s]
+:   0%|          | 0/125 [00:00<?, ?it/s]
+=>Epoches 119, learning rate = 0.0001,                 previous best = 0.5932
+pixAcc: 0.782, mIoU: 0.405: 100%|██████████| 125/125 [01:16<00:00,  1.62it/s]
