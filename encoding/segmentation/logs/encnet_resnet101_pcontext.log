@@ -1,0 +1,635 @@
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #2
+  (fname, cnt))
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/matplotlib/__init__.py:1067: UserWarning: Duplicate key in file "/home/ubuntu/.config/matplotlib/matplotlibrc", line #3
+  (fname, cnt))
+100%|██████████| 99885/99885 [00:07<00:00, 14142.77KB/s]loading annotations into memory...
+JSON root keys:dict_keys(['info', 'images', 'annos_segmentation', 'annos_occlusion', 'annos_boundary', 'categories', 'parts'])
+Done (t=5.82s)
+creating index...
+index created! (t=8.18s)
+loading annotations into memory...
+JSON root keys:dict_keys(['info', 'images', 'annos_segmentation', 'annos_occlusion', 'annos_boundary', 'categories', 'parts'])
+Done (t=7.12s)
+creating index...
+index created! (t=7.40s)
+Model file is not found. Downloading.
+Downloading /home/ubuntu/.encoding/models/resnet101-5be5422a.zip from https://hangzh.s3.amazonaws.com/encoding/models/resnet101-5be5422a.zip...
+EncNet(
+  (pretrained): ResNet(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (layer2): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (3): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (layer3): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (3): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (4): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (5): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (6): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (7): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (8): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (9): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (10): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (11): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (12): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (13): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (14): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (15): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (16): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (17): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (18): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (19): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (20): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (21): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (22): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (layer4): Sequential(
+      (0): Bottleneck(
+        (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+        (downsample): Sequential(
+          (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): Bottleneck(
+        (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+      (2): Bottleneck(
+        (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(4, 4), dilation=(4, 4), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace)
+      )
+    )
+    (avgpool): AvgPool2d(kernel_size=7, stride=7, padding=0)
+    (fc): Linear(in_features=2048, out_features=1000, bias=True)
+  )
+  (head): EncHead(
+    (conv5): Sequential(
+      (0): Conv2d(2048, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace)
+    )
+    (connect): ModuleList(
+      (0): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace)
+      )
+      (1): Sequential(
+        (0): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace)
+      )
+    )
+    (fusion): Sequential(
+      (0): Conv2d(1536, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace)
+    )
+    (encmodule): EncModule(
+      (encoding): Sequential(
+        (0): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): ReLU(inplace)
+        (3): Encoding(N x 512=>32x512)
+        (4): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (5): ReLU(inplace)
+        (6): Mean()
+      )
+      (fc): Sequential(
+        (0): Linear(in_features=512, out_features=512, bias=True)
+        (1): Sigmoid()
+      )
+      (selayer): Linear(in_features=512, out_features=59, bias=True)
+    )
+    (conv6): Sequential(
+      (0): Dropout2d(p=0.1)
+      (1): Conv2d(512, 59, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+)
+  0%|          | 0/312 [00:00<?, ?it/s]
+Using cos LR Scheduler!
+Starting Epoch: 0
+Total Epoches: 80
+Train loss: 1.755: 100%|██████████| 312/312 [06:19<00:00,  1.22s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 0, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 1.360: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 1, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 1.253: 100%|██████████| 312/312 [06:03<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 2, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 1.157: 100%|██████████| 312/312 [05:55<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 3, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 1.113: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 4, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 1.051: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 5, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.999: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 6, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.961: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 7, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.943: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 8, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.900: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 9, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.864: 100%|██████████| 312/312 [06:03<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 10, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.846: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 11, learning rate = 0.0010,                 previous best = 0.0000
+Train loss: 0.859: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 12, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.820: 100%|██████████| 312/312 [05:57<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 13, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.780: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 14, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.739: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 15, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.738: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 16, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.757: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 17, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.735: 100%|██████████| 312/312 [06:05<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 18, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.703: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 19, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.650: 100%|██████████| 312/312 [05:57<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 20, learning rate = 0.0009,                 previous best = 0.0000
+Train loss: 0.640: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 21, learning rate = 0.0008,                 previous best = 0.0000
+Train loss: 0.638: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 22, learning rate = 0.0008,                 previous best = 0.0000
+Train loss: 0.609: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 23, learning rate = 0.0008,                 previous best = 0.0000
+Train loss: 0.589: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 24, learning rate = 0.0008,                 previous best = 0.0000
+Train loss: 0.579: 100%|██████████| 312/312 [05:55<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 25, learning rate = 0.0008,                 previous best = 0.0000
+Train loss: 0.561: 100%|██████████| 312/312 [05:57<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 26, learning rate = 0.0008,                 previous best = 0.0000
+Train loss: 0.542: 100%|██████████| 312/312 [05:52<00:00,  1.13s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 27, learning rate = 0.0007,                 previous best = 0.0000
+Train loss: 0.548: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 28, learning rate = 0.0007,                 previous best = 0.0000
+Train loss: 0.519: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 29, learning rate = 0.0007,                 previous best = 0.0000
+Train loss: 0.521: 100%|██████████| 312/312 [05:50<00:00,  1.12s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 30, learning rate = 0.0007,                 previous best = 0.0000
+Train loss: 0.517: 100%|██████████| 312/312 [05:52<00:00,  1.13s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 31, learning rate = 0.0007,                 previous best = 0.0000
+Train loss: 0.511: 100%|██████████| 312/312 [05:54<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 32, learning rate = 0.0007,                 previous best = 0.0000
+Train loss: 0.477: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 33, learning rate = 0.0006,                 previous best = 0.0000
+Train loss: 0.467: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 34, learning rate = 0.0006,                 previous best = 0.0000
+Train loss: 0.463: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 35, learning rate = 0.0006,                 previous best = 0.0000
+Train loss: 0.464: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 36, learning rate = 0.0006,                 previous best = 0.0000
+Train loss: 0.442: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 37, learning rate = 0.0006,                 previous best = 0.0000
+Train loss: 0.430: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 38, learning rate = 0.0005,                 previous best = 0.0000
+Train loss: 0.443: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 39, learning rate = 0.0005,                 previous best = 0.0000
+Train loss: 0.420: 100%|██████████| 312/312 [05:57<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 40, learning rate = 0.0005,                 previous best = 0.0000
+Train loss: 0.409: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 41, learning rate = 0.0005,                 previous best = 0.0000
+Train loss: 0.408: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 42, learning rate = 0.0005,                 previous best = 0.0000
+Train loss: 0.397: 100%|██████████| 312/312 [05:55<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 43, learning rate = 0.0004,                 previous best = 0.0000
+Train loss: 0.393: 100%|██████████| 312/312 [05:51<00:00,  1.13s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 44, learning rate = 0.0004,                 previous best = 0.0000
+Train loss: 0.390: 100%|██████████| 312/312 [05:52<00:00,  1.13s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 45, learning rate = 0.0004,                 previous best = 0.0000
+Train loss: 0.388: 100%|██████████| 312/312 [05:55<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 46, learning rate = 0.0004,                 previous best = 0.0000
+Train loss: 0.366: 100%|██████████| 312/312 [05:55<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 47, learning rate = 0.0004,                 previous best = 0.0000
+Train loss: 0.376: 100%|██████████| 312/312 [05:59<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 48, learning rate = 0.0003,                 previous best = 0.0000
+Train loss: 0.373: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 49, learning rate = 0.0003,                 previous best = 0.0000
+Train loss: 0.361: 100%|██████████| 312/312 [06:00<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 50, learning rate = 0.0003,                 previous best = 0.0000
+Train loss: 0.357: 100%|██████████| 312/312 [05:56<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 51, learning rate = 0.0003,                 previous best = 0.0000
+Train loss: 0.353: 100%|██████████| 312/312 [05:58<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 52, learning rate = 0.0003,                 previous best = 0.0000
+Train loss: 0.356: 100%|██████████| 312/312 [06:03<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 53, learning rate = 0.0003,                 previous best = 0.0000
+Train loss: 0.348: 100%|██████████| 312/312 [05:55<00:00,  1.14s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 54, learning rate = 0.0002,                 previous best = 0.0000
+Train loss: 0.346: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 55, learning rate = 0.0002,                 previous best = 0.0000
+Train loss: 0.340: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 56, learning rate = 0.0002,                 previous best = 0.0000
+Train loss: 0.340: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 57, learning rate = 0.0002,                 previous best = 0.0000
+Train loss: 0.338: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 58, learning rate = 0.0002,                 previous best = 0.0000
+Train loss: 0.324: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 59, learning rate = 0.0002,                 previous best = 0.0000
+Train loss: 0.328: 100%|██████████| 312/312 [06:07<00:00,  1.18s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 60, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.323: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 61, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.325: 100%|██████████| 312/312 [06:03<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 62, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.318: 100%|██████████| 312/312 [06:06<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 63, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.319: 100%|██████████| 312/312 [06:06<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 64, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.318: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 65, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.312: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 66, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.314: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 67, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.312: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 68, learning rate = 0.0001,                 previous best = 0.0000
+Train loss: 0.314: 100%|██████████| 312/312 [06:03<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 69, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.310: 100%|██████████| 312/312 [06:05<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 70, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.310: 100%|██████████| 312/312 [06:00<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 71, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.319: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 72, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.309: 100%|██████████| 312/312 [06:03<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 73, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.311: 100%|██████████| 312/312 [06:01<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 74, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.307: 100%|██████████| 312/312 [06:00<00:00,  1.16s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 75, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.308: 100%|██████████| 312/312 [06:04<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 76, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.305: 100%|██████████| 312/312 [06:06<00:00,  1.17s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 77, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.310: 100%|██████████| 312/312 [06:00<00:00,  1.15s/it]
+  0%|          | 0/312 [00:00<?, ?it/s]
+=>Epoches 78, learning rate = 0.0000,                 previous best = 0.0000
+Train loss: 0.307: 100%|██████████| 312/312 [06:02<00:00,  1.16s/it]
+
+=>Epoches 79, learning rate = 0.0000,                 previous best = 0.0000
